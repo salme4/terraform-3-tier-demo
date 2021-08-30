@@ -32,3 +32,13 @@ variable "bastion_key_pair_name" {
   default = "devos-seoul-keypair"
   description = "EC2 Instance Key Pair Name"
 }
+
+variable "db_username" {
+  default = "demouser"
+  description = "RDS Access User Name"
+}
+
+variable "db_password" {
+  default = "demopass"
+  description = "RDS Access Password"
+}

@@ -3,7 +3,7 @@ resource "aws_lb" "tier-alb" {
   internal = false
   load_balancer_type = "application"
   security_groups = [aws_security_group.web-alb-sg.id]
-  subnets = [aws_subnet.tier-public-subnet-1.id, aws_subnet.tier-public-subnet-2.id]
+  subnets = [aws_subnet.tier-public-subnet-1.id, aws_subnet.tier-public-subnet-1.id]
 }
 
 resource "aws_lb_target_group" "tier-alb-target-group" {

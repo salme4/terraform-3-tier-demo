@@ -15,11 +15,6 @@ resource "aws_route_table_association" "pub-1" {
   route_table_id = aws_route_table.tier-pub-rt.id
 }
 
-resource "aws_route_table_association" "pub-2" {
-  subnet_id = aws_subnet.tier-public-subnet-2.id
-  route_table_id = aws_route_table.tier-pub-rt.id
-}
-
 resource "aws_route_table_association" "pub-mgmt" {
   subnet_id = aws_subnet.tier-public-subnet-mgmt.id
   route_table_id = aws_route_table.tier-pub-rt.id
@@ -43,5 +38,15 @@ resource "aws_route_table_association" "prv-1" {
 
 resource "aws_route_table_association" "prv-2" {
   subnet_id = aws_subnet.tier-private-subnet-2.id
+  route_table_id = aws_route_table.tier-prv-rt.id
+}
+
+resource "aws_route_table_association" "db-1" {
+  subnet_id = aws_subnet.tier-db-subnet-1.id
+  route_table_id = aws_route_table.tier-prv-rt.id
+}
+
+resource "aws_route_table_association" "db-2" {
+  subnet_id = aws_subnet.tier-db-subnet-2.id
   route_table_id = aws_route_table.tier-prv-rt.id
 }
