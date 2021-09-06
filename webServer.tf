@@ -4,7 +4,7 @@ resource "aws_instance" "web-server-ec2" {
   associate_public_ip_address = false
   subnet_id = aws_subnet.tier-private-subnet-1.id
   key_name = var.bastion_key_pair_name
-  vpc_security_group_ids = [aws_security_group.web-server-sg.id]
+  vpc_security_group_ids = [aws_security_group.web-lc-sg.id]
 
   user_data = <<-EOF
             #!/bin/bash
