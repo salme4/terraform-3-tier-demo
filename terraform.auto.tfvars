@@ -7,3 +7,4 @@ web_instance_type = "t3.small"
 bastion_key_pair_name = "china-dev-key" //수정
 db_username = "demouser"
 db_password = "demopass"
+bastion-ami = "ami-077d04bd0fae9d5c1"
