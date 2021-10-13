@@ -1,5 +1,5 @@
 resource "aws_instance" "bastion-ec2" {
-  ami = var.bastion-ami//data.aws_ami.amazon-linux2.id
+  ami = data.aws_ami.amazon-linux2.id
   instance_type = var.bastion_instance_type
   associate_public_ip_address = true
   subnet_id = aws_subnet.tier-public-subnet-mgmt.id

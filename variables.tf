@@ -42,8 +42,3 @@ variable "db_password" {
   default = "demopass"
   description = "RDS Access Password"
 }
-
-variable "bastion-ami" {
-  default = "ami-077d04bd0fae9d5c1"
-  description = "Amazon Machine Image Linux 2"
-}

@@ -1,10 +1,9 @@
-region = "cn-north-1"
+region = "ap-northeast-2"
 resource_prefix = "DevOS-3-Tier"
 vpc_cidr = "10.0.0.0/16"
 subnet_cidr = "10.0.0.0/20"
 bastion_instance_type = "t3.small"
 web_instance_type = "t3.small"
-bastion_key_pair_name = "china-dev-key" //수정
+bastion_key_pair_name = "devos-seoul-keypair" //수정
 db_username = "demouser"
 db_password = "demopass"
-bastion-ami = "ami-077d04bd0fae9d5c1"
