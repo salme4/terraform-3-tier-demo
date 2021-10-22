@@ -17,3 +17,4 @@
 
 ## TODO
 * 모듈화
+* Internal LB 추가 (WAS)
