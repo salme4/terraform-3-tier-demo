@@ -1,5 +1,5 @@
 region = "ap-northeast-2"
-resource_prefix = "DevOS-3-Tier"
+resource_prefix = "DevOS-2-Tier"
 vpc_cidr = "10.0.0.0/16"
 subnet_cidr = "10.0.0.0/20"
 bastion_instance_type = "t3.small"
